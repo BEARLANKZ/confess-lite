@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffdee9, #b5fffc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: background 1s ease;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  transition: all 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#start-btn {
+  background-color: #ff9a9e;
+  color: white;
+}
+
+#start-btn:hover {
+  background-color: #f87080;
+}
+
+#yes-btn {
+  background-color: #ff70a6;
+  color: white;
+}
+
+#yes-btn:hover {
+  background-color: #ff5e94;
+}
+
+#no-btn {
+  background-color: #ccc;
+  color: #333;
+  position: relative;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+#final-text {
+  font-size: 1.8rem;
+  color: #d14f4f;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Floating hearts animation */
+#hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.heart {
+  position: absolute;
+  font-size: 24px;
+  color: #ff5e94;
+  animation: floatUp 4s linear forwards;
+  opacity: 0.9;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.5);
+    opacity: 0;
+  }
+}

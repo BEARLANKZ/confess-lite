@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Be Mine?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="name-container">
+    <h2>Hey there 💌</h2>
+    <p>What’s your name?</p>
+    <input type="text" id="name-input" placeholder="Type your name here..." />
+    <button id="start-btn">Continue 💖</button>
+  </div>
+
+  <div class="container hidden" id="question-container">
+    <h2 id="question-text"></h2>
+    <div class="buttons">
+      <button id="no-btn">No 😅</button>
+      <button id="yes-btn">Yes 💕</button>
+    </div>
+  </div>
+
+  <div class="container hidden" id="final-container">
+    <h2 id="final-text"></h2>
+  </div>
+
+  <!-- Floating hearts container -->
+  <div id="hearts-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
